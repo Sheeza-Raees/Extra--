@@ -1,0 +1,204 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.site-header{
+    /**margin-top: -20px;**/
+    width:100%;
+    height: 100vh;
+    /**background: linear-gradient(57deg , #00c6a7, #1e4d92);**/
+    clip-path: polygon(0% 0%, 100% 0% , 100% 80% ,0% 100%);
+     background:linear-gradient(57deg,#00afc6, #e73fb8);
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+.logo{
+    width: 50%;
+    height:100px;
+}
+.logo h1{
+    padding-left: 50px;
+    line-height: 70px;
+    color: white;
+    font-size: 30px;
+}
+.menu{
+    width:50%;
+    height:100px;
+}
+.menu ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 70px;
+}
+.menu ul li{
+    list-style: none;
+    color: white;
+   font-size: 20px;
+}
+section{
+    display:flex;
+    
+}
+.leftside{
+    width:45%;
+    height:auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.leftside img{
+    width:600px;
+    height:500px;
+}
+.rightside{
+    
+    width:55%;
+    height:300px;
+    color:white;
+    text-align: center;
+    margin-top: 60px;
+    padding-top:50px;
+
+}
+.rightside h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rightside p{
+    font-size: 1.2rem;
+    padding:20px 0px;
+    text-transform: uppercase;
+}
+.rightside button{
+    font-size: 15px;
+    color: white;
+    border:1px solid white;
+    border-radius: 4px;
+   /** background: linear-gradient(57deg , #00c6a7, #1e4d92);**/
+    padding:20px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background:linear-gradient(57deg,#00afc6, #b62b8f);
+
+}
+.rightside button:hover{
+    background:linear-gradient(57deg, #b62b8f, #1e4d92);
+
+
+}
+@media screen and (max-width:1130px)
+{
+    .leftside{
+        width:50%;
+    }
+.leftside img{
+    width:500px;}
+    .rightside{
+        width:50%;
+    }
+}
+@media screen and (max-width:1060px)
+{
+    .leftside{
+        width:50%;
+        margin-top: 14px;
+    }
+
+.leftside img{
+    width:450px;}
+    .rightside{
+        width:50%;
+        margin-top: 37px;
+    }
+    .rightside h1{
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .menu ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: justify;
+        align-items: center;
+        line-height: 70px;
+        background-color: #b62b8f;
+    }
+
+    .logo{
+    width: 45%;
+    
+}
+}
+@media screen and (max-width:903px)
+{
+    .leftside{
+        margin-top: 8px;
+    }
+    .leftside img{
+        width: 400px;
+        height:450px;
+    
+    }
+}
+@media screen and (max-width:785px)
+{
+    .leftside{
+        margin-top: 8px;
+    }
+    .leftside img{
+        width: 300px;
+        height:350px;
+    }
+    .rightside h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:660px)
+{
+    .leftside{
+        margin-top: 8px;
+    }
+    .leftside img{
+        width: 280px;
+        height:280px;
+    }
+    .rightside{
+        height:200px;
+    }
+    .rightside h1{
+        font-size: 25px;
+    }
+    
+    nav{
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+    }
+    .logo{
+        width:100%;
+        text-align: center;
+    }
+    .menu{
+        margin-top:-20px;
+        width:100%;
+        text-align: center;
+    }
+    .rightside p{
+        padding:10px 0px;
+        
+    }
+}
+@media screen and (max-width:550px)
+{
+    .leftside img{
+        width:250px;
+        height:250px;
+    }
+}
